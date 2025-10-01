@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Halloween - Interactive Mystery</title>
+    <link rel="stylesheet" href="spooktacular.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- STICKY HEADER NAVIGATION -->
+    <header>
+        <div class="header-content">
+            <h1 class="logo">🎃 The Last Halloween</h1>
+            <nav>
+                <a href="#page1">Chapter 1</a>
+                <a href="#page2">Chapter 2</a>
+                <a href="#page3">Chapter 3</a>
+                <a href="#page4">Chapter 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE 1: THE MYSTERY BEGINS -->
+    <section id="page1" class="page page-1">
+        <div class="page-container">
+            <div class="newspaper">
+                <h2 class="newspaper-title">Spooky Times Gazette</h2>
+                <p class="newspaper-date">October 30th, 2025</p>
+                <h3 class="headline">HALLOWEEN CANCELED!</h3>
+                <p class="article">
+                    In an unprecedented move, Mayor Grimsworth has officially canceled Halloween 
+                    celebrations throughout the town. All trick-or-treating, costume parties, 
+                    and festivities are hereby banned effective immediately.
+                </p>
+                <p class="article">
+                    "It's for the safety of our citizens," the Mayor stated cryptically at 
+                    yesterday's emergency town hall meeting. When pressed for details, he 
+                    refused to elaborate further.
+                </p>
+                <div class="hidden-text">
+                    <p class="revelation">
+                        But locals whisper of something more sinister... Strange lights seen 
+                        at the old clock tower. Pumpkins withering overnight. And an ancient 
+                        curse that threatens to make this Halloween the town's last...
+                    </p>
+                </div>
+            </div>
+            
+            <div class="fog-layer fog-1"></div>
+            <div class="fog-layer fog-2"></div>
+            
+            <div class="navigation-prompt">
+                <a href="#page2" class="next-btn">Investigate the Mystery →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 2: TOWN SQUARE - INVESTIGATION HUB -->
+    <section id="page2" class="page page-2">
+        <div class="page-container">
+            <h2 class="chapter-title">Chapter 2: The Investigation</h2>
+            <p class="chapter-intro">Click on locations to explore and gather clues...</p>
+            
+            <div class="town-map">
+                <!-- Location Cards -->
+                <article class="location-card library">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>📚 Old Library</h3>
+                            <p>Ancient tomes hold secrets</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">You discover a dusty spellbook. A page is marked: 
+                            "The Harvest Moon Curse - can only be broken by gathering three 
+                            sacred items before midnight strikes."</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="location-card cemetery">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>🪦 Cemetery</h3>
+                            <p>The dead remember everything</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">A tombstone reads: "Here lies Mortimer Grimsworth, 
+                            1823-1889. His greed brought darkness upon this town. May his 
+                            descendants break the curse he wrought."</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="location-card clocktower">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>🕰️ Clock Tower</h3>
+                            <p>Time is running out</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">The clock is frozen at 11:59. Strange symbols glow 
+                            around its face. You notice three empty slots beneath it, shaped 
+                            like a candle, a key, and a crystal.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="location-card pumpkin-patch">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>🎃 Pumpkin Patch</h3>
+                            <p>Once vibrant, now dying</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">Among the withered pumpkins, one still glows 
+                            faintly. Inside it, you find an ornate silver key with a moon 
+                            engraved on its handle.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="location-card witch-cottage">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>🏚️ Witch's Cottage</h3>
+                            <p>Abandoned... or is it?</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">A cauldron still bubbles. On the mantle sits a 
+                            black candle that never melts. A note reads: "Take this to light 
+                            the way through darkness."</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="location-card town-hall">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>🏛️ Town Hall</h3>
+                            <p>What is the Mayor hiding?</p>
+                        </div>
+                        <div class="card-back">
+                            <p class="clue">In the Mayor's office, you find his journal: 
+                            "I am the last Grimsworth. To lift grandfather's curse, I must 
+                            sacrifice Halloween itself... unless someone finds the crystal 
+                            of moonlight hidden in the old well."</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="ghost floating"></div>
+            <div class="bat bat-1"></div>
+            <div class="bat bat-2"></div>
+            
+            <div class="navigation-prompt">
+                <a href="#page1" class="prev-btn">← Back</a>
+                <a href="#page3" class="next-btn">To the Clock Tower →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3: THE RITUAL - BREAKING THE CURSE -->
+    <section id="page3" class="page page-3">
+        <div class="page-container">
+            <h2 class="chapter-title">Chapter 3: Breaking the Curse</h2>
+            <p class="chapter-intro">Place the three sacred items to break the curse...</p>
+            
+            <div class="ritual-scene">
+                <div class="clock-tower-large">
+                    <div class="clock-face">
+                        <div class="clock-hand hour"></div>
+                        <div class="clock-hand minute"></div>
+                    </div>
+                    
+                    <div class="item-slots">
+                        <input type="checkbox" id="item1" class="item-check">
+                        <label for="item1" class="item-slot slot-1">
+                            <span class="slot-empty">🕯️</span>
+                            <span class="slot-filled">Black Candle</span>
+                        </label>
+
+                        <input type="checkbox" id="item2" class="item-check">
+                        <label for="item2" class="item-slot slot-2">
+                            <span class="slot-empty">🔑</span>
+                            <span class="slot-filled">Moon Key</span>
+                        </label>
+
+                        <input type="checkbox" id="item3" class="item-check">
+                        <label for="item3" class="item-slot slot-3">
+                            <span class="slot-empty">💎</span>
+                            <span class="slot-filled">Moonlight Crystal</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="ritual-complete-message">
+                    <p>The items glow with ancient power! The curse begins to break...</p>
+                </div>
+            </div>
+
+            <div class="moon"></div>
+            <div class="stars"></div>
+            
+            <div class="navigation-prompt">
+                <a href="#page2" class="prev-btn">← Back</a>
+                <a href="#page4" class="next-btn">See the Ending →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 4: THE RESOLUTION -->
+    <section id="page4" class="page page-4">
+        <div class="page-container">
+            <h2 class="chapter-title">Chapter 4: Halloween Saved!</h2>
+            
+            <div class="ending-scene">
+                <div class="celebration">
+                    <p class="ending-text">
+                        As the three sacred items unite, a brilliant light erupts from the 
+                        clock tower! The curse shatters like glass, and the frozen clock 
+                        begins to tick once more.
+                    </p>
+                    <p class="ending-text">
+                        Throughout the town, pumpkins regain their vibrant orange glow. 
+                        Jack-o'-lanterns light up on every doorstep. Children in costumes 
+                        pour into the streets with squeals of delight.
+                    </p>
+                    <p class="ending-text">
+                        Mayor Grimsworth steps forward, tears in his eyes. "Thank you," he 
+                        whispers. "You've freed my family from a century of darkness. 
+                        Halloween is saved... forever."
+                    </p>
+                </div>
+
+                <div class="pumpkin-gallery">
+                    <div class="pumpkin pumpkin-1">🎃</div>
+                    <div class="pumpkin pumpkin-2">🎃</div>
+                    <div class="pumpkin pumpkin-3">🎃</div>
+                    <div class="pumpkin pumpkin-4">🎃</div>
+                    <div class="pumpkin pumpkin-5">🎃</div>
+                </div>
+
+                <div class="fireworks">
+                    <div class="firework firework-1"></div>
+                    <div class="firework firework-2"></div>
+                    <div class="firework firework-3"></div>
+                </div>
+            </div>
+            
+            <div class="the-end">
+                <h3>The End</h3>
+                <p class="tagline">✨ Every Halloween has its magic ✨</p>
+            </div>
+
+            <div class="navigation-prompt">
+                <a href="#page1" class="restart-btn">🔄 Experience Again</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 The Last Halloween Project</p>
+        <p class="tagline">Crafted with CSS magic and spooky dedication 🎃👻</p>
+    </footer>
+
+</body>
+</html>
