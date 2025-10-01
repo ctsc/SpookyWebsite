@@ -561,19 +561,25 @@ nav a:focus {
     display: none;
 }
 
-.item-check:checked + .item-slot {
+/* When checkboxes are checked, style their corresponding labels */
+#item1:checked ~ .clock-tower-large .item-slots .slot-1,
+#item2:checked ~ .clock-tower-large .item-slots .slot-2,
+#item3:checked ~ .clock-tower-large .item-slots .slot-3 {
     background: linear-gradient(135deg, var(--monster-green) 0%, var(--pumpkin) 100%);
     border-color: var(--pumpkin);
     animation: itemGlow 1s ease-in-out;
 }
 
-.item-check:checked + .item-slot .slot-empty {
+#item1:checked ~ .clock-tower-large .item-slots .slot-1 .slot-empty,
+#item2:checked ~ .clock-tower-large .item-slots .slot-2 .slot-empty,
+#item3:checked ~ .clock-tower-large .item-slots .slot-3 .slot-empty {
     display: none;
 }
 
-.item-check:checked + .item-slot .slot-filled {
+#item1:checked ~ .clock-tower-large .item-slots .slot-1 .slot-filled,
+#item2:checked ~ .clock-tower-large .item-slots .slot-2 .slot-filled,
+#item3:checked ~ .clock-tower-large .item-slots .slot-3 .slot-filled {
     display: block;
-    font-weight: bold;
 }
 
 .ritual-complete-message {
@@ -584,6 +590,7 @@ nav a:focus {
     font-family: var(--font-accent);
     transform: scale(0.8);
     transition: all 0.5s ease;
+    margin-top: var(--space-4);
 }
 
 /* Show message when all 3 items are checked */
@@ -599,7 +606,7 @@ nav a:focus {
     opacity: 0;
 }
 
-.item-slots:has(#item1:checked):has(#item2:checked):has(#item3:checked) ~ .ritual-complete-message {
+#item1:checked ~ #item2:checked ~ #item3:checked ~ .ritual-complete-message {
     opacity: 1;
     transform: scale(1);
     animation: messageReveal 1s ease-out;
